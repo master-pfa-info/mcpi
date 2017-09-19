@@ -2,8 +2,17 @@
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
 
-// Package mcpi provides a simple interface to plot scatter points and
-// display them.
+// Package mcpi provides a simple interface to plot (x,y) points
+// from a Monte-Carlo approximation method to compute Pi.
+//
+// Example:
+//
+//  mcpi.Wait() // wait for the web server to be ready
+//  for i := 0; i < 100; i++ {
+//      mcpi.Plot(float64(i), float64(i))
+//  }
+//  mcpi.Wait()
+//
 package mcpi
 
 import (
