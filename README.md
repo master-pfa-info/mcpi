@@ -22,3 +22,7 @@ func main() {
 	mcpi.Quit()
 }
 ```
+
+## Sample
+
+![mc-pi](https://github.com/master-pfa-info/mcpi/raw/master/mc-pi.png)
