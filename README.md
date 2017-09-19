@@ -4,6 +4,8 @@
 
 `mcpi` provides a simple interface to draw `(x,y)` points for a Monte-Carlo approximation method to compute Pi.
 
+`mcpi` starts a web server that will listen for plot requests.
+
 ## Installation
 
 Installation is done with `go get`:
@@ -22,6 +24,13 @@ func main() {
 	mcpi.Quit()
 }
 ```
+
+```sh
+$> go run ./main.go
+2017/09/19 17:27:44 listening on 127.0.0.1:46191
+```
+
+and then direct your favorite web-browser to the indicated URL.
 
 ## Sample
 
