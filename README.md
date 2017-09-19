@@ -15,8 +15,10 @@ $> go get github.com/master-pfa-info/mcpi
 ## Example
 
 ```go
-mcpi.Wait()
-mcpi.Plot(0,0)
-mcpi.Plot(0.5, 0.5)
-mcpi.Quit()
+func main() {
+	mcpi.Wait()
+	mcpi.Plot(0,0)
+	mcpi.Plot(0.5, 0.5)
+	mcpi.Quit()
+}
 ```
