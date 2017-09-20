@@ -154,13 +154,9 @@ func (srv *server) run() {
 
 func plot(n int, in, out plotter.XYs) wplot {
 	const pmax = 1e6
-
-	p, err := hplot.New()
-	if err != nil {
-		log.Fatal(err)
-	}
-
 	radius := vg.Points(0.1)
+
+	p := hplot.New()
 
 	p.X.Label.Text = "x"
 	p.X.Min = 0
