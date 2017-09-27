@@ -11,7 +11,7 @@
 //  for i := 0; i < 100; i++ {
 //      mcpi.Plot(float64(i), float64(i))
 //  }
-//  mcpi.Wait()
+//  mcpi.Quit()
 //
 package mcpi
 
