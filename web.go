@@ -153,8 +153,10 @@ func (srv *server) run() {
 }
 
 func plot(n int, in, out plotter.XYs) wplot {
-	const pmax = 1e6
-	radius := vg.Points(0.1)
+	const (
+		pmax   = 1e6
+		radius = vg.Length(0.5)
+	)
 
 	p := hplot.New()
 
